@@ -77,8 +77,8 @@ def make_list(indict):
 
 def menu():
     print("Создаем список покупок.\nВыберите блюда.")
-    cook_book = file_to_dict('file.txt')
-    inlist = make_list(file_to_dict('file.txt'))
+    cook_book = file_to_dict('recipes.txt')
+    inlist = make_list(file_to_dict('recipes.txt'))
     p = int(input("\nНа сколько персон готовить?\n"))
     h = get_shop_list_by_dishes(cook_book, inlist, p)
     print("\nСписок покупок:")
